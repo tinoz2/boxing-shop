@@ -1,0 +1,34 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 2rem;
+}
+.boxing-gloves{
+    width: 250px;
+}
+.span{
+    color: var(--red);
+}
+.container-section-1{
+    margin: 1rem;
+}
+.h2-section{
+    margin-bottom: 1rem;
+}
+.container-section{
+    display: flex;
+    flex-direction: column;
+}
+.container-section-circle{
+    margin-left: 0.80rem;
+    margin-top: 1rem;
+}
+.container-shops{
+    margin: 5rem 0 7rem 0;
+}
+.container-shop{
+    border-bottom: 2px solid white;
+    width: 100%;
+}

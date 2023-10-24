@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container .button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: var(--back);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon {
+    width: 33px;
+    height: 33px;
+    fill: #fff;
+}
+
+.container .button:hover {
+    background-color: #0e76a8;
+}
+
+.container .button22:hover {
+    background-color: black;
+}
+
+.container .button3:hover {
+    background-color: #E50914;
+}
+
+.container .button4:hover {
+    background-image: linear-gradient(to right, #5B51D8, #833AB4, #E1306C, #FFD500);
+}
