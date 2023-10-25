@@ -117,7 +117,7 @@
 @media (max-width: 450px){
     .container-cart{
         max-width: 70%;
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
     .container-cart-2{
         max-width: 55%;

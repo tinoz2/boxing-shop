@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.jsx'
 const ComponentsContainer = () => {
     return (
         <div className='container-wrapper'>
-                <NavBar />
+            <NavBar />
             <div className='container-components'>
                 <Home />
                 <Shop2 />
