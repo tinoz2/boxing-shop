@@ -49,7 +49,9 @@ const Card2 = () => {
     const buyNowPrint = () => {
         if (listBuy.length > 0) {
             print()
-            emptyCart()
+            setTimeout(() => {
+                emptyCart();
+            }, 500)
         }
     }
 
