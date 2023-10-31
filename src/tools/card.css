@@ -11,11 +11,6 @@
     border: 1px solid var(--gray);
     transition: 0.3s all;
 }
-.card:hover{
-    border: 1px solid var(--red);
-    filter: drop-shadow(10px 10px 20px var(--red));
-    opacity: 0.9;
-}
 
 .card__wrapper {
     display: flex;

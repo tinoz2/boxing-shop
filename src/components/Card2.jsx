@@ -59,7 +59,7 @@ const Card2 = () => {
                 <Link to='/'><Button classB='primary-button' title='Return to home'></Button></Link>
             </div>
             {listBuy.map(item => (
-                <div key={item.id} className='container-cart'>
+                <div key={item.id} className='container-cart container-cart-hover'>
                     <div>
                         <img className='img-cart' src={item.img} alt='image helmet boxing' />
                     </div>

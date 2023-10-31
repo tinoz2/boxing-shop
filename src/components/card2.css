@@ -25,7 +25,7 @@
     margin: 2rem auto;
     transition: 0.3s ease all;
 }
-.container-cart:hover{
+.container-cart-hover:hover{
     filter: brightness(0.8);
 }
 
@@ -55,9 +55,6 @@
     transition: 0.3s ease all;
 }
 
-.img-delete:hover{
-    width: 105px;
-}
 
 .button-delete {
     border: none;
@@ -109,9 +106,6 @@
 @media(max-width: 576px){
     .img-delete{
         width: 70px;
-    }
-    .img-delete:hover{
-        width: 75px;
     }
 }
 @media (max-width: 450px){
