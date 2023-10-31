@@ -11,12 +11,10 @@ export const LogicProvider = ({children}) => {
         const section = document.getElementById('container-shop2')
         const section2 = document.getElementById('container-shop')
         const div = document.getElementById('container-buttons1')
-        const card = document.getElementsByName('container-all-card2')
         aside.classList.remove('disabled')
         section.style.display = 'none'
         section2.style.display = 'none'
         div.style.display = 'none'
-        card.style.display = 'none'
 
         setShowNavbarState(showNavbarState)
     }
@@ -27,12 +25,10 @@ export const LogicProvider = ({children}) => {
         const section = document.getElementById('container-shop2')
         const section2 = document.getElementById('container-shop')
         const div = document.getElementById('container-buttons1')
-        const card = document.getElementsByName('container-all-card2')
         aside.classList.add('disabled')
         section.style.display = 'block'
         section2.style.display = 'block'
         div.style.display = 'block'
-        card.style.display = 'block'
 
         setShowNavbarState(showNavbarState)
     }

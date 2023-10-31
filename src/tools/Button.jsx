@@ -1,10 +1,10 @@
 import '../tools/button.css'
 
-const Button = ({ title, classB }) => {
+const Button = ({ title, classB, addToCart }) => {
     return (
         <>
             <div className="button-borders button2">
-                <button className={classB}>{title}</button>
+                <button onClick={addToCart} className={classB}>{title}</button>
             </div>
         </>
     )

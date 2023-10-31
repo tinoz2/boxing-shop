@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { LogicContext } from '../context/NavbarContext'
 import '../main.css'
+import { ReduxContext } from '../context/ReducerContext'
 
 const NavBar = () => {
 
-    const {showNavbar, hideNavbar} = useContext(LogicContext)
+    const { showNavbar, hideNavbar } = useContext(LogicContext)
+    const { listBuy } = useContext(ReduxContext)
 
     return (
         <>
@@ -26,7 +28,7 @@ const NavBar = () => {
                     <div className='container-buttons-nav'>
                         <Link to='/'><Button classB='primary-button button-nav' title='Home' /></Link>
                         <Link to='/'><Button classB='primary-button button-nav' title='Shop' /></Link>
-                        <Link to='/cart' ><Button classB='primary-button button-nav' title='Cart' /></Link>
+                        <Link to='/cart' ><Button classB='primary-button button-nav' title={`Cart(${listBuy.length})`} /></Link>
                     </div>
                     <div>
                         <Social2 />

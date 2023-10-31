@@ -22,7 +22,7 @@
     padding: 2rem;
     border-radius: 1rem;
     max-width: 50%;
-    margin: 0 auto;
+    margin: 2rem auto;
     transition: 0.3s ease all;
 }
 .container-cart:hover{
