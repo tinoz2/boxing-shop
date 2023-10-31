@@ -48,8 +48,8 @@ const Card2 = () => {
 
     const buyNowPrint = () => {
         if (listBuy.length > 0) {
-            emptyCart()
             print()
+            emptyCart()
         }
     }
 
