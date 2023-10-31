@@ -51,7 +51,7 @@ const Card2 = () => {
             print()
             setTimeout(() => {
                 emptyCart();
-            }, 200)
+            }, 300)
         }
     }
 
