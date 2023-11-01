@@ -63,7 +63,7 @@ const Card2 = () => {
                 </div> :
                 <Loader />
             }
-            <ToastContainer position="top-right" autoClose={500} theme='dark' hideProgressBar={false} />
+            <ToastContainer position="top-right" autoClose={100} theme='dark' hideProgressBar={false} />
         </>
     );
 }

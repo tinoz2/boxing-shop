@@ -14,7 +14,7 @@ const ComponentsContainer = () => {
                 <Home />
                 <Shop2 />
                 <Shopping />
-                <ToastContainer position="top-right" autoClose={500} theme='dark' />
+                <ToastContainer position="top-right" autoClose={100} theme='dark' />
             </div>
         </div>
     )
