@@ -5,21 +5,24 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LogicProvider from './context/NavbarContext.jsx'
 import ProductosProvider from './context/ProductosProvider.jsx'
 import { ReducerProvider } from './context/ReducerContext.jsx'
+import LogicCartProvider from './context/LogicCart.jsx'
 
 const App = () => {
     return (
         <BrowserRouter>
             <LogicProvider>
                 <ReducerProvider>
-                    <ProductosProvider>
-                        <Routes>
-                            <Route path='/' element={<ComponentsContainer />} />
-                            <Route path='/cart' element={<Card2 />} />
-                        </Routes>
-                    </ProductosProvider>
+                    <LogicCartProvider>
+                        <ProductosProvider>
+                            <Routes>
+                                <Route path='/' element={<ComponentsContainer />} />
+                                <Route path='/cart' element={<Card2 />} />
+                            </Routes>
+                        </ProductosProvider>
+                    </LogicCartProvider>
                 </ReducerProvider>
             </LogicProvider>
-        </BrowserRouter>
+        </BrowserRouter >
     )
 }
 
