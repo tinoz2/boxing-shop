@@ -12,6 +12,7 @@ const NavBar = () => {
 
     const { showNavbar, hideNavbar } = useContext(LogicContext)
     const { listBuy } = useContext(ReduxContext)
+    const totalQty = listBuy.reduce((total, product) => total + product.qty, 0)
 
     return (
         <>
@@ -28,7 +29,7 @@ const NavBar = () => {
                     <div className='container-buttons-nav'>
                         <Link to='/'><Button classB='primary-button button-nav' title='Home' /></Link>
                         <Link to='/'><Button classB='primary-button button-nav' title='Shop' /></Link>
-                        <Link to='/cart' ><Button classB='primary-button button-nav' title={`Cart(${listBuy.length})`} /></Link>
+                        <Link to='/cart' ><Button classB='primary-button button-nav' title={`Cart(${totalQty})`} /></Link>
                     </div>
                     <div>
                         <Social2 />
