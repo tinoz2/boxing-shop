@@ -172,4 +172,11 @@ a{
         color: white;
         border: none;
     }
+    .card-form{
+        width: auto !important;
+        margin: 1rem 1rem !important;
+    }
+    .h3-form{
+        font-size: 0.8rem !important;
+    }
 }

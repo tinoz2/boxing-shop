@@ -58,7 +58,9 @@ const Card2 = () => {
                         <small className='small-cart'>$ {totalCalculator()}</small>
                     </div>
                     <div>
-                        <Button classB='primary-button' title='Buy Now' addToCart={buyNowPrint} />
+                        <Link to="/form">
+                            <Button classB='primary-button' title='Buy Now' />
+                        </Link>
                     </div>
                 </div> :
                 <Loader />

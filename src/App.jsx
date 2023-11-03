@@ -6,6 +6,7 @@ import LogicProvider from './context/NavbarContext.jsx'
 import ProductosProvider from './context/ProductosProvider.jsx'
 import { ReducerProvider } from './context/ReducerContext.jsx'
 import LogicCartProvider from './context/LogicCart.jsx'
+import Form from './components/Form.jsx'
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                             <Routes>
                                 <Route path='/' element={<ComponentsContainer />} />
                                 <Route path='/cart' element={<Card2 />} />
+                                <Route path='/form' element={<Form />} />
                             </Routes>
                         </ProductosProvider>
                     </LogicCartProvider>

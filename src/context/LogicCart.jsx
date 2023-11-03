@@ -41,17 +41,9 @@ export const LogicCartProvider = ({ children }) => {
             }
         })
     }
-    const buyNowPrint = () => {
-        if (listBuy.length > 0) {
-            print()
-            setTimeout(() => {
-                emptyCart();
-            }, 400)
-        }
-    }
 
     return (
-        <LogicCartContext.Provider value={{ buyNowPrint, emptyCart2, totalCalculator }}>
+        <LogicCartContext.Provider value={{ emptyCart2, totalCalculator }}>
             {children}
         </LogicCartContext.Provider>
     )
