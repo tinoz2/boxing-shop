@@ -7,6 +7,7 @@ import Loader from '../tools/Loader.jsx'
 const Shopping = () => {
 
     const { products } = useContext(CartContext)
+    
     return (
         <>
             <div id='container-shop2' className='container-shop'>

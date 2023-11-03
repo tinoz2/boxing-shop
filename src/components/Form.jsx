@@ -1,6 +1,8 @@
 import { useContext, useState, useEffect } from "react";
 import { getFirestore, addDoc, collection } from "firebase/firestore";
 import { ReduxContext } from "../context/ReducerContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Button from '../tools/Button.jsx';
 import { Link } from 'react-router-dom';
 import './form.css';
@@ -38,6 +40,7 @@ const Form = () => {
             const docRef = await addDoc(ordersCollection, order);
             setOrderId(docRef.id);
             emptyCart();
+            toast.success('Data sent successfully')
         } catch (error) {
             console.error("Error al enviar datos a Firestore:", error);
         }
@@ -101,6 +104,7 @@ const Form = () => {
                     </span>
                 </button>
             </div>
+            <ToastContainer position="bottom-center" autoClose={300} theme="dark" />
         </div>
     );
 }
