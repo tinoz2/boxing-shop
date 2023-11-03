@@ -104,7 +104,7 @@ const Form = () => {
                     </span>
                 </button>
             </div>
-            <ToastContainer position="bottom-center" autoClose={300} theme="dark" />
+            <ToastContainer position="bottom-center" autoClose={600} theme="dark" />
         </div>
     );
 }
