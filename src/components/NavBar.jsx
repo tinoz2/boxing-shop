@@ -4,13 +4,11 @@ import icon from '../img/icon.svg'
 import Social2 from './Social2.jsx'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
-import { LogicContext } from '../context/NavbarContext'
 import '../main.css'
 import { ReduxContext } from '../context/ReducerContext'
 
-const NavBar = () => {
+const NavBar = ({ showNavbar, hideNavbar }) => {
 
-    const { showNavbar, hideNavbar } = useContext(LogicContext)
     const { listBuy } = useContext(ReduxContext)
     const totalQty = listBuy.reduce((total, product) => total + product.qty, 0)
 

@@ -16,7 +16,7 @@ const MySwal = withReactContent(Swal)
 const Card2 = () => {
     const notify = () => toast.error("Product removed");
     const { listBuy, eraseToCart, } = useContext(ReduxContext)
-    const { totalCalculator, emptyCart2, buyNowPrint } = useContext(LogicCartContext)
+    const { totalCalculator, emptyCart2} = useContext(LogicCartContext)
 
     return (
         <>

@@ -1,7 +1,7 @@
 import Home from './components/Home.jsx'
 import Shop2 from './components/Shop2.jsx'
 import Shopping from './components/Shopping.jsx'
-import NavBar from './components/NavBar.jsx'
+import ContainerLogicNavbar from './logic/ContainerLogicNavbar.jsx'
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const ComponentsContainer = () => {
     return (
         <div className='container-wrapper'>
-            <NavBar />
+            <ContainerLogicNavbar />
             <div className='container-components'>
                 <Home />
                 <Shop2 />

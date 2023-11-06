@@ -1,8 +1,7 @@
-import { createContext, useState } from "react"
+import { useState } from "react"
+import NavBar from '../components/NavBar.jsx'
 
-export const LogicContext = createContext(null)
-
-export const LogicProvider = ({children}) => {
+const LogicProvider = () => {
 
     const [showNavbarState, setShowNavbarState] = useState(false)
 
@@ -34,9 +33,10 @@ export const LogicProvider = ({children}) => {
     }
 
     return(
-        <LogicContext.Provider value={{showNavbar, hideNavbar}}>
-            {children}
-        </LogicContext.Provider>
+        <NavBar
+        showNavbar={showNavbar}
+        hideNavbar={hideNavbar}
+        />
     )
 }
 
