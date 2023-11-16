@@ -16,7 +16,7 @@ const MySwal = withReactContent(Swal)
 const Card2 = () => {
     const notify = () => toast.error("Product removed");
     const { listBuy, eraseToCart, } = useContext(ReduxContext)
-    const { totalCalculator, emptyCart2} = useContext(LogicCartContext)
+    const { totalCalculator, emptyCart2 } = useContext(LogicCartContext)
 
     return (
         <>
@@ -43,7 +43,10 @@ const Card2 = () => {
                                 </div>
                             </div>
                             <div>
-                                <button className='button-toast' onClick={notify}><button onClick={() => eraseToCart(item.id)} className='button-delete'><img className='img-delete' src={eliminar} alt="button erase" /></button></button>
+                                <button onClick={() => {
+                                    eraseToCart(item.id);
+                                    notify();
+                                }} className='button-delete'><img className='img-delete' src={eliminar} alt="button erase" /></button>
                             </div>
                         </div>
                     ))

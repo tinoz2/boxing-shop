@@ -47,10 +47,6 @@ a{
 .disabledd{
     display: none;
 }
-.button-toast{
-    background-color: transparent;
-    border: none;
-}
 @media (max-width: 1700px){
     .container{
         flex-direction: column;

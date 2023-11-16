@@ -14,6 +14,7 @@ const Card = ({imgProduct, altProduct, titleProduct, descriptionProduct, pricePr
 
     const addedToCart = (buy) => {
         addToCart(buy)
+        notify()
     }
 
     return (
@@ -33,13 +34,13 @@ const Card = ({imgProduct, altProduct, titleProduct, descriptionProduct, pricePr
                     </div>
                 </div>
                 <div className='button-cart'>
-                <button className='button-toast' onClick={notify}><Button classB='primary-button' title={nameProduct} addToCart={() => addedToCart({
+                <Button classB='primary-button' title={nameProduct} addToCart={() => addedToCart({
                         title: titleProduct,
                         qty: qty,
                         price: priceProduct,
                         img: imgProduct,
                         id: id
-                    })} /></button>
+                    })} />
                 </div>
             </div>
         </>
